@@ -1,0 +1,46 @@
+<app-header  [childMessage]="parentVar"></app-header>
+<p>Message From Footer :: {{messageP}}</p>
+<!--<button (click)="handleClick()">showOnClick</button>
+<button (click)="handleClick()">showOnClick</button>
+<button (click)="handleClick()">hideOnClick</button>
+
+<p>Decimal :: {{ 3.443 | number:'2.2' }}</p>
+<p>{{ user | json }}</p>
+<p>Date is {{todayDate | date:'short'}}</p>
+<p>Date is {{todayDate | date:'mediumTime'}}</p>
+<p>Date is {{todayDate | date:'hm'}}</p>
+
+<p>{{ 654.65 | percent }}</p>
+<p>{{ 234.12 | percent:'3.2-3' }}</p>
+<p>messages from service file is :: {{this.myService.getMessage()}}</p>
+<p>Today date is {{todayDate}}</p>
+<p>Today date is {{todayDate | date:'fullDate'}}</p>
+<p>Today date is {{todayDate | date:'dd/MM/yyyy'}}</p>
+<p>Today date is {{todayDate | date:'dd-MM-yyyy'}}</p>
+<p>Today date is {{todayDate | date:'MM-dd-yyyy'}}</p>
+<p>Price: {{ valueToCredit | currency }}</p>
+<p>Price: {{ valueToCredit | currency:'EUR' }}</p>
+<p>Price: {{ valueToCredit | currency:'INR' }}</p>
+<p>Name in uppercase is: {{ Name | customePipe }}</p>
+<p>Total : {{ arr | totalElement }}</p> 
+<div *ngIf="flag == true">
+    <p>Today date is ::  {{todayDate}}</p>
+   
+</div>
+<div *ngIf="flag == false">
+    <p>Price:: {{ valueToCredit | currency }}</p>
+   
+</div>
+
+<div [ngSwitch] = "flag">
+    <p *ngSwitchCase="false">Today date is ::  {{todayDate}}</p>
+    <p *ngSwitchCase="true">Price:: {{ valueToCredit | currency }}</p>
+    <p *ngSwitchDefault>Total : {{ arr | totalElement }}</p> 
+</div>
+<div [ngClass]="{'active': flag, 'disabled': !flag}">Content here</div>
+<div [ngStyle]="{'color': flag? 'green': 'red'}">Style here</div>-->
+<button (click)="dispalyAlertMsg()">alertMsg</button>
+
+
+<router-outlet></router-outlet>
+<app-footer (messageEvent)="receiveMessage($event)"></app-footer>
